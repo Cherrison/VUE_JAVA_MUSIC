@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header.my {
+    background-color: rgb(114, 79, 79);
+    color: #feafaa;
+    font-size: 24px;
+    text-decoration: none;
+    user-select: none;
+    box-shadow: 0px 5px 10px rgba(163, 142, 197, 0.9);
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.header.my>a,
+.header.my>a:link,
+.header.my>a:visited,
+.header.my>a:active {
+    margin: 0px 60px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    user-select: none;
+}
+
+.header.my>a:hover {
+    color: yellow;
+    box-shadow: 0px 5px -5px rgba(50, 90, 199, 0.9);
+    transition: box-shadow 0.5s;
+}
+
+@media only screen and (max-width: 878px) {
+    .header.my {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.header.my .login {
+    color: antiquewhite;
+    font-size: 16px;
+}
+
+.header.my .logout {
+    color: gray;
+    float: right;
+    margin-right: 30px;
+}
+
+.header.my .logout:hover {
+    color: aquamarine;
+}
